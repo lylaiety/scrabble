@@ -17,6 +17,9 @@ export default class GameManager extends cc.Component {
 		resource: false
 	};
 
+	/**
+	 * Myname
+	 */
 	onLoad() {
 		GameManager.$ = this;
 		whevent.on(Events.LOADED_CONFIG, this.onLoadedConfig, this);
